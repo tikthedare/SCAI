@@ -1,4 +1,7 @@
 {
   "name": "SCAI",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "install": "bash .cursor/scripts/install.sh"
 }
