@@ -1,0 +1,4 @@
+{
+  "name": "SCAI",
+  "install": "bash .cursor/scripts/install.sh"
+}
