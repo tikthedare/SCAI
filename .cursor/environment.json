@@ -3,5 +3,5 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "install": "bash .cursor/scripts/install.sh"
+  "install": "python3 -m venv .venv\n.venv/bin/pip install --upgrade pip wheel\n.venv/bin/pip install pytest ruff build\nif [ -f pyproject.toml ]; then .venv/bin/pip install -e \".[dev]\" 2>/dev/null || .venv/bin/pip install -e .; elif [ -f setup.py ]; then .venv/bin/pip install -e .; fi"
 }
